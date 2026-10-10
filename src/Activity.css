@@ -1,0 +1,51 @@
+.rental-history { margin: 24px 0; }
+.rental-history h2 { font-size: 17px; margin-bottom: 15px; }
+.rental-history ol { padding: 0; list-style: none; }
+.rental-history li { padding: 12px 0 12px 15px; border-left: 2px solid #d9e5ce; margin-left: 4px; }
+.rental-history li > div { display: flex; flex-direction: column; gap: 4px; }
+.rental-history li strong { font-size: 12px; }
+.rental-history li span, .rental-history li p { font-size: 11px; color: #68765f; line-height: 1.7; overflow-wrap: anywhere; }
+.handover-summary { border: 1px solid #dce5d2; padding: 14px; border-radius: 10px; margin-top: 15px; background: #f7faf2; }
+.handover-summary h3 { font-size: 13px; }
+.handover-summary dl { margin-bottom: 0; }
+.handover-summary dt { font-size: 10px; color: #68765f; margin-top: 10px; }
+.handover-summary dd { margin: 4px 0 0; font-size: 12px; line-height: 1.6; overflow-wrap: anywhere; }
+.overdue-note { border: 1px solid #edc6b5; background: #fbede5; color: #944e3a; font-size: 12px; line-height: 1.7; border-radius: 8px; padding: 12px; margin-bottom: 14px; }
+.handover-form, .reason-form { width: 100%; display: flex; flex-direction: column; gap: 14px; }
+.handover-form h3 { font-size: 16px; }
+.handover-form label, .reason-form label, .action-note { display: flex; flex-direction: column; gap: 7px; font-size: 12px; }
+.action-note { width: 100%; }
+.check-label, .notification-filter { display: flex !important; flex-direction: row !important; align-items: center; gap: 9px; font-size: 12px; min-height: 44px; }
+.check-label input, .notification-filter input { width: 20px; height: 20px; min-height: 20px; accent-color: #214f3b; flex-shrink: 0; }
+.owner-record-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; margin-top: 18px; }
+.owner-record-card h2 { font-size: 18px; margin: 8px 0; overflow-wrap: anywhere; }
+.owner-record-card h3 { font-size: 13px; margin-top: 18px; }
+.owner-record-card p, .owner-record-card li { font-size: 12px; color: #68765f; line-height: 1.8; overflow-wrap: anywhere; }
+.owner-record-card ul { padding-left: 18px; }
+.owner-record-card .button { margin-top: 14px; }
+.owner-search { margin: 18px 0; }
+.owner-search input { width: 100%; }
+.rental-due-badge { color: #944e3a !important; font-weight: 600; }
+.cancellation-reason { display: flex; flex-direction: column; gap: 8px; font-size: 12px; margin: 12px 0; }
+/* The expanded navigation remains reachable on shorter presentation screens. */
+.admin-workspace .sidebar { overflow-y: auto; }
+.admin-workspace .sidebar > * { flex-shrink: 0; }
+.notification-list { display: flex; flex-direction: column; gap: 12px; margin-top: 14px; }
+.notification-card { padding: 16px; border: 1px solid #e0e7d3; border-radius: 12px; background: white; }
+.notification-card.is-unread { border-left: 4px solid #759c59; background: #f7faf2; }
+.notification-card h2 { font-size: 15px; margin: 7px 0; }
+.notification-card p, .notification-card time { font-size: 12px; color: #68765f; line-height: 1.7; overflow-wrap: anywhere; }
+.notification-state { font-size: 10px; color: #527143; }
+.notification-card > div { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 10px; }
+.notification-center h1 { font-size: 25px; }
+.notification-bell { position: relative; }
+.unread-count { position: absolute; right: -2px; top: -1px; background: #214f3b; color: white; min-width: 16px; height: 16px; border-radius: 10px; display: grid; place-items: center; font-size: 9px; padding: 0 3px; }
+.farmer-header-actions { display: flex; align-items: center; gap: 4px; }
+.language-control label { display: flex; align-items: center; gap: 8px; font-size: 11px; }
+.language-control select { min-height: 40px; font-size: 12px; max-width: 120px; }
+.mobile-app .language-control label { justify-content: space-between; }
+.mobile-app .notification-center .section-heading { align-items: start; flex-wrap: wrap; gap: 8px; }
+.mobile-app .notification-center h1 { font-size: var(--mobile-heading); }
+.mobile-app .rental-history h2 { font-size: var(--mobile-title); }
+@media(max-width: 900px) { .owner-record-grid { grid-template-columns: minmax(0, 1fr); } }
+@media(max-width: 600px) { .admin-workspace .topbar-right { flex-wrap: wrap; } .language-control label { gap: 4px; } .language-control select { max-width: 96px; font-size: 11px; } }

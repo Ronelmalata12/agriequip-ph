@@ -1,0 +1,237 @@
+body.farmer-document { min-width: 0; }
+.mobile-app { --mobile-caption: 10px; --mobile-small: 11px; --mobile-body: 12px; --mobile-title: 14px; --mobile-number: 18px; --mobile-heading: 22px; --mobile-hero: 24px; max-width: 600px; height: 100dvh; display: flex; flex-direction: column; overflow: hidden; margin: 0 auto; background: #f8f9f3;  color: #293d2e; font-family: 'DM Sans', 'Segoe UI', sans-serif; font-size: var(--mobile-body); line-height: 1.55; }
+.mobile-app h1, .mobile-app h2, .mobile-app h3, .mobile-app h4 { font-family: inherit; font-weight: 700; line-height: 1.3; }
+.mobile-app button { font-weight: 600; }
+.farmer-header { flex-shrink: 0; display: flex; justify-content: space-between; align-items: center; padding: 10px 16px; background: #fff; border-bottom: 1px solid #edf0e5; }
+.farmer-brand { display: flex; align-items: center; gap: 6px; background: transparent; min-height: 44px; padding: 0; color: #294a33; }
+.farmer-brand > span { background: #214f3b; color: #e9d18c; border-radius: 10px 10px 10px 3px; padding: 6px; display: flex; }
+.farmer-brand strong { font: 700 17px 'DM Sans', 'Segoe UI', sans-serif; letter-spacing: -.5px; }
+.farmer-brand small { font-size: var(--mobile-body); color: #8a9c65; }
+.farmer-avatar { width: 44px; height: 44px; border-radius: 50%; background: radial-gradient(circle, #ecf0df 16px, transparent 17px); color: #657d4e; font-size: var(--mobile-body); font-weight: 700; display: grid; place-items: center; padding: 0; }
+.farmer-demo-strip { flex-shrink: 0; padding: 6px 16px; color: #67775d; font-size: var(--mobile-small); letter-spacing: .35px; background: #f3f5eb; border-bottom: 1px solid #e9eddc; }
+.farmer-demo-strip .live-dot { width: 4px; height: 4px; margin-right: 5px; }
+.farmer-main { flex: 1; min-height: 0; min-width: 0; padding: 16px; max-width: none; overflow-y: auto; scroll-padding-block: 12px; }
+.farmer-main > * { min-width: 0; }
+.farmer-main :is(button, input, select, summary, h3) { scroll-margin-block: 12px; }
+.farmer-greeting > p, .farmer-page-title > p { font-size: var(--mobile-small); letter-spacing: .8px; color: #657b50; font-weight: 700; margin-bottom: 6px; }
+.farmer-greeting h1 { font-size: var(--mobile-heading); letter-spacing: -.6px; margin-bottom: 6px; }
+.farmer-greeting > span, .farmer-page-title > span { font-size: var(--mobile-body); color: #68765f; line-height: 1.6; display: block; }
+.farmer-hero { position: relative; border-radius: 16px; overflow: hidden; margin: 18px 0 16px; background: #214f3b; min-height: 0; }
+.farmer-hero > div { position: relative; z-index: 1; padding: 18px; }
+.farmer-hero > div > span { font-size: var(--mobile-small); letter-spacing: .6px; color: #cedbbe; }
+.farmer-hero h2 { color: white; font-size: var(--mobile-hero); font-weight: 700; letter-spacing: -.6px; line-height: 1.2; margin: 10px 0; }
+.farmer-hero p { font-size: var(--mobile-body); color: #c1d1b8; margin-bottom: 12px; }
+.farmer-hero .field-art { width: 68%; opacity: .45; }
+.farmer-hero .button { font-size: var(--mobile-body); min-height: 44px; padding: 10px 12px; }
+.farmer-search { display: flex; align-items: center; gap: 8px; min-height: 44px; background: white; border: 1px solid #dee5d2; border-radius: 12px; padding: 0 10px; color: #859477; }
+.farmer-search input { border: 0; width: 100%; padding: 6px 0; min-height: 44px; font-size: var(--mobile-body); background: transparent; }
+.farmer-search:focus-within { outline: 3px solid #bc9432; outline-offset: 2px; }
+.farmer-search input:focus-visible { outline: none; }
+.farmer-search .icon-button { min-width: 44px; min-height: 44px; padding: 0; }
+.farmer-section { margin-top: 22px; }
+.farmer-section-heading { display: flex; align-items: center; justify-content: space-between; gap: 4px; margin-bottom: 10px; }
+.farmer-section-heading h2 { font-size: var(--mobile-title); letter-spacing: -.25px; line-height: 1.5; }
+.farmer-section-heading .text-button { font-size: var(--mobile-body); flex-shrink: 0; }
+.farmer-categories { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; }
+.farmer-categories button { display: flex; flex-direction: column; align-items: center; gap: 8px; border: 1px solid #e0e6d4; border-radius: 12px; background: #fff; color: #60744e; font-size: var(--mobile-body); line-height: 1.35; padding: 12px 4px; min-height: 68px; }
+.farmer-categories button:hover { background: #eaf0df; }
+.farmer-categories button > span { color: #819266; }
+.mobile-app .equipment-grid { grid-template-columns: 1fr; gap: 12px; }
+.mobile-app .equipment-picture { height: 128px; }
+.mobile-app .equipment-body { padding: 14px 14px 8px; }
+.mobile-app .equipment-body h3 { font-size: var(--mobile-title); }
+.mobile-app .equipment-body .eyebrow { font-size: var(--mobile-small); }
+.mobile-app .location { font-size: var(--mobile-body); }
+.mobile-app .card-bottom { margin-top: 10px; }
+.mobile-app .card-bottom strong { font-size: var(--mobile-title); }
+.mobile-app .card-bottom .text-button { font-size: var(--mobile-body); }
+.mobile-app .availability { font-size: var(--mobile-small); }
+.farmer-local-note { display: flex; align-items: flex-start; gap: 10px; padding: 14px; border: 1px solid #e1e6d1; border-radius: 11px; background: #f0f3e6; margin: 20px 0; }
+.farmer-local-note svg { flex-shrink: 0; color: #81956c; }
+.farmer-local-note strong { font-size: var(--mobile-body); line-height: 1.6; display: block; }
+.farmer-local-note p { font-size: var(--mobile-body); color: #869277; line-height: 1.8; margin-top: 4px; }
+.farmer-bottom-nav { flex-shrink: 0; position: static; width: 100%; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 2px; background: #fff; border-top: 1px solid #e0e6d7; padding: 4px 4px max(4px, env(safe-area-inset-bottom)); }
+.farmer-bottom-nav button { display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 44px; min-width: 0; padding: 4px 0; gap: 4px; color: #66765c; background: transparent; border-radius: 8px; font-size: 10.5px; line-height: 1.2; letter-spacing: 0; }
+.farmer-bottom-nav button > span { white-space: nowrap; }
+.farmer-bottom-nav button:focus-visible { outline-offset: -3px; }
+.farmer-bottom-nav button.active { color: #315d39; background: #eff4e5; font-weight: 700; }
+.farmer-page-title { margin-bottom: 16px; }
+.farmer-page-title h1 { font-size: var(--mobile-heading); letter-spacing: -.6px; margin-bottom: 6px; }
+.farmer-filters { display: grid; grid-template-columns: 1.1fr 1fr; gap: 8px; margin: 12px 0; }
+.farmer-filters label { display: flex; flex-direction: column; min-width: 0; gap: 6px; font-size: var(--mobile-body); font-weight: 600; color: #66765c; }
+.farmer-filters select { width: 100%; font-size: var(--mobile-body); padding: 8px 6px; }
+.farmer-result-count { font-size: var(--mobile-body); color: #8b967c; margin-bottom: 12px; }
+.farmer-back { background: transparent; display: flex; align-items: center; gap: 6px; color: #6f825c; font-size: var(--mobile-body); min-height: 44px; margin: -6px 0 10px; padding: 0; }
+.farmer-detail-heading { margin-top: 18px; }
+.farmer-detail-heading h1 { font-size: var(--mobile-heading); margin-bottom: 8px; }
+.farmer-price { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px; margin-top: 12px; padding-bottom: 12px; border-bottom: 1px solid #e1e6d7; }
+.farmer-price strong { font-size: var(--mobile-heading); color: #2e5937; }
+.farmer-price > span { font-size: var(--mobile-body); color: #8a967d; }
+.farmer-price small { margin-left: auto; font-size: var(--mobile-small); color: #9d9773; }
+.farmer-description { font-size: var(--mobile-body); color: #68785f; line-height: 1.7; margin: 12px 0 16px; }
+.farmer-detail-section { margin: 18px 0; }
+.farmer-detail-section h2 { font-size: var(--mobile-title); }
+.mobile-app .spec-list { grid-template-columns: 1fr; gap: 10px; }
+.mobile-app .spec-list li { font-size: var(--mobile-body); }
+.reserved-range { display: flex; align-items: center; gap: 4px; font-size: var(--mobile-body); line-height: 1.8; color: #8a7449; background: #f5f0df; border-radius: 6px; padding: 6px; margin-bottom: 6px; }
+.reserved-range svg { flex-shrink: 0; }
+.farmer-footnote { font-size: var(--mobile-body); color: #939b87; text-align: center; margin-top: 10px; line-height: 1.8; }
+.farmer-disclaimer { font-size: var(--mobile-small); color: #a0a78f; text-align: center; margin: 20px 0 4px; line-height: 1.6; }
+.farmer-success { text-align: center; padding: 8px 0; }
+.success-mark { display: grid; place-items: center; margin: 6px auto 18px; width: 56px; height: 56px; border-radius: 50%; background: #e5edd9; color: #70954e; }
+.farmer-success .eyebrow { font-size: var(--mobile-small); letter-spacing: 1.3px; }
+.farmer-success h1 { font-size: var(--mobile-hero); margin-top: 10px; }
+.farmer-success > p:not(.eyebrow) { font-size: var(--mobile-body); color: #829071; line-height: 1.8; margin-top: 12px; }
+.success-summary { margin: 18px 0; border: 1px solid #dee6d1; background: white; border-radius: 11px; padding: 16px 12px; }
+.success-summary h2 { font-size: var(--mobile-title); margin: 10px 0 6px; }
+.success-summary p { font-size: var(--mobile-body); color: #87957c; }
+.success-summary strong { display: block; font-size: var(--mobile-heading); margin: 14px 0 4px; }
+.success-summary > span:not(.status-badge) { display: block; font-size: var(--mobile-body); color: #8a967c; }
+.success-summary small { display: block; font-size: var(--mobile-small); color: #9ba28a; border-top: 1px solid #e5ebdb; margin-top: 14px; padding-top: 12px; }
+.farmer-success .button { margin-top: 10px; }
+.farmer-rental-tabs { display: flex; gap: 4px; padding: 4px; background: #edf1e3; border-radius: 10px; margin: 16px 0; }
+.farmer-rental-tabs button { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 4px; flex: 1; min-width: 0; min-height: 44px; padding: 4px 4px; border-radius: 7px; background: transparent; color: #68765f; font-size: var(--mobile-body); line-height: 1.3; }
+.farmer-rental-tabs button.active { background: white; color: #305733; box-shadow: 0 2px 4px #334d2d0a; font-weight: 700; }
+.farmer-rental-tabs button > span { background: #eaf0df; border-radius: 50%; padding: 2px 4px; font-size: var(--mobile-small); }
+.farmer-rentals { display: flex; flex-direction: column; gap: 12px; }
+.farmer-rental-card { background: white; border: 1px solid #e0e7d3; border-radius: 11px; padding: 12px; }
+.farmer-rental-card-top { display: grid; grid-template-columns: 60px minmax(0, 1fr); align-items: center; gap: 8px; }
+.farmer-rental-art { width: 60px; height: 56px; border-radius: 8px; flex-shrink: 0; }
+.farmer-rental-card h2 { font-size: var(--mobile-title); margin: 6px 0; }
+.farmer-rental-card-top p { font-size: var(--mobile-small); color: #8b987c; }
+.farmer-rental-dates { display: flex; align-items: center; gap: 6px; color: #798d66; font-size: var(--mobile-body); margin: 12px 0 8px; line-height: 1.7; }
+.farmer-rental-dates svg { flex-shrink: 0; }
+.farmer-rental-bottom { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 6px; border-top: 1px solid #edf1e4; padding-top: 6px; }
+.farmer-rental-bottom strong { font-size: var(--mobile-number); color: #305838; }
+.farmer-rental-bottom .text-button { font-size: var(--mobile-body); }
+.approval-reminder { color: #8b7949; font-size: var(--mobile-body); background: #faf4df; padding: 8px; border-radius: 6px; margin-top: 6px; line-height: 1.6; }
+.approval-prompt { display: flex; align-items: center; gap: 8px; width: 100%; background: #edf3df; border: 1px solid #d9e4c7; border-radius: 9px; padding: 10px; color: #6e8653; text-align: left; margin-top: 14px; }
+.approval-prompt > span { flex: 1; font-size: var(--mobile-small); }
+.approval-prompt strong { display: block; font-size: var(--mobile-body); margin-top: 4px; }
+.farmer-booking-title { background: white; border: 1px solid #e1e7d7; border-radius: 10px; padding: 14px; margin-bottom: 16px; }
+.farmer-booking-title h2 { font-size: var(--mobile-number); margin: 10px 0 6px; }
+.farmer-booking-title p { font-size: var(--mobile-body); color: #8b977f; }
+.rental-progress { background: white; border: 1px solid #e0e7d3; border-radius: 11px; padding: 14px; margin: 18px 0; }
+.rental-progress h2 { font-size: var(--mobile-title); }
+.rental-progress ol { list-style: none; margin: 16px 0 0; padding: 0; }
+.rental-progress li { display: flex; align-items: center; gap: 8px; font-size: var(--mobile-body); color: #a0a98f; position: relative; padding-bottom: 16px; }
+.rental-progress li:last-child { padding-bottom: 0; }
+.rental-progress li > span { display: grid; place-items: center; background: #f1f4e8; color: #a4af93; width: 25px; height: 25px; border-radius: 50%; font-size: var(--mobile-small); flex-shrink: 0; }
+.rental-progress li.done { color: #607c4c; }
+.rental-progress li.done > span { background: #e1ebd1; color: #6b914a; }
+.farmer-cancel { text-align: center; margin: 12px 0 0; }
+.farmer-cancel p { font-size: var(--mobile-body); color: #8a7454; margin-bottom: 10px; line-height: 1.7; }
+.farmer-cancel .button { margin: 4px; font-size: var(--mobile-body); }
+.farmer-notice { display: flex; align-items: flex-start; gap: 6px; font-size: var(--mobile-body); line-height: 1.7; color: #608047; background: #eaf2dd; border: 1px solid #d6e2c2; padding: 6px 10px; border-radius: 9px; margin-bottom: 16px; }
+.farmer-notice.error { background: #fcf0e3; border-color: #ecd5b3; color: #9a744a; }
+.mobile-app .empty-state { padding: 22px 16px; min-height: 210px; }
+.mobile-app .empty-state h2 { font-size: var(--mobile-title); line-height: 1.5; }
+.mobile-app .empty-state p { font-size: var(--mobile-body); }
+.mobile-app .button { min-height: 44px; }
+
+/* Shared components keep the same readable type scale in every mobile step. */
+.mobile-app .button { font-size: var(--mobile-body); border-radius: 10px; }
+.mobile-app .eyebrow { font-size: var(--mobile-small); letter-spacing: .6px; }
+.mobile-app .help-text, .mobile-app .estimate h3 span { font-size: var(--mobile-body); line-height: 1.6; color: #68765f; }
+.mobile-app .rental-form label, .mobile-app .estimate > div, .mobile-app .review-note { font-size: var(--mobile-body); line-height: 1.6; }
+.mobile-app .rental-form input, .mobile-app .rental-form select { font-size: var(--mobile-body); min-height: 44px; }
+.mobile-app .estimate { border-radius: 12px; padding: 14px; }
+.mobile-app .estimate h3 { font-size: var(--mobile-title); }
+.mobile-app .booking-summary { font-size: var(--mobile-body); line-height: 1.6; }
+.mobile-app .booking-summary dt { font-size: var(--mobile-body); color: #68765f; }
+.mobile-app .booking-summary dd { font-size: var(--mobile-body); }
+.mobile-app .location, .farmer-result-count, .farmer-footnote, .farmer-local-note p { color: #68765f; }
+.mobile-app .booking-steps { font-size: var(--mobile-body); gap: 6px; flex-wrap: wrap; }
+.mobile-app .form-intro h3 { font-size: var(--mobile-title); }
+.mobile-app .form-intro p { font-size: var(--mobile-body); line-height: 1.6; }
+.mobile-app .detail-owner p { font-size: var(--mobile-title); line-height: 1.5; }
+.mobile-app .status-badge { font-size: var(--mobile-body); }
+
+.farmer-account-card { background: #fff; border: 1px solid #e0e7d3; border-radius: 14px; padding: 16px; margin-bottom: 12px; }
+.farmer-account-card h2 { font-size: var(--mobile-title); margin-bottom: 8px; }
+.farmer-account-card p { font-size: var(--mobile-body); color: #68765f; line-height: 1.7; }
+.farmer-account-card p + p { margin-top: 10px; }
+.farmer-profile-card { text-align: center; padding-block: 24px; }
+.farmer-profile-avatar { width: 48px; height: 48px; display: grid; place-items: center; margin: 0 auto 12px; border-radius: 50%; background: #edf3e3; color: #315d39; font-size: var(--mobile-number); font-weight: 700; }
+.farmer-profile-card h2 { font-size: var(--mobile-number); margin-bottom: 4px; }
+.farmer-profile-location { display: inline-flex; align-items: center; gap: 4px; margin-top: 10px; color: #68765f; font-size: var(--mobile-body); }
+.farmer-profile-stats { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 6px; margin: 0 0 14px; }
+.farmer-profile-stats > div { display: flex; flex-direction: column-reverse; align-items: center; gap: 4px; padding: 10px 4px; border: 1px solid #e0e7d3; border-radius: 12px; background: #fff; }
+.farmer-profile-stats dt { font-size: var(--mobile-small); color: #68765f; }
+.farmer-profile-stats dd { font-size: var(--mobile-heading); font-weight: 700; margin: 0; color: #315d39; }
+.farmer-account-details { margin: 12px 0; }
+.farmer-account-details > div { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 4px 10px; padding: 8px 0; border-bottom: 1px solid #edf1e4; font-size: var(--mobile-body); }
+.farmer-account-details dt { color: #68765f; }
+.farmer-account-details dd { margin: 0; font-weight: 600; }
+.farmer-help-details summary { cursor: pointer; font-weight: 600; min-height: 44px; align-content: center; }
+.farmer-help-details summary:focus-visible { outline: 3px solid #bc9432; outline-offset: 3px; border-radius: 4px; }
+.farmer-help-details ol { padding-left: 20px; margin: 10px 0 0; font-size: var(--mobile-body); color: #68765f; }
+.farmer-help-details li + li { margin-top: 8px; }
+
+@media(min-width: 601px) { .mobile-app .farmer-main { padding-inline: 25px; } }
+@media(max-width: 350px) { .farmer-main { padding-inline: 15px; } .farmer-greeting h1 { font-size: 20px; } .farmer-categories button { font-size: var(--mobile-small); min-height: 68px; } .farmer-section-heading h2 { font-size: var(--mobile-body); } .farmer-filters { grid-template-columns: 1fr; } .farmer-bottom-nav { padding-inline: 3px; gap: 0; } .farmer-bottom-nav button { font-size: clamp(9px, 3.5vw, 10px); } }
+
+
+/* Shared components use the same compact mobile scale. */
+.mobile-app h1, .farmer-detail-heading h1, .farmer-success h1 { font-size: var(--mobile-heading); }
+.mobile-app h2, .mobile-app h3 { font-size: var(--mobile-title); }
+.farmer-hero h2 { font-size: var(--mobile-hero); }
+.mobile-app svg:not(.equipment-art):not(.field-art) { width: 18px; height: 18px; flex-shrink: 0; }
+.mobile-app p, .mobile-app dd, .mobile-app h1, .mobile-app h2, .mobile-app h3 { overflow-wrap: anywhere; }
+.mobile-app input, .mobile-app select { min-height: 44px; font-size: var(--mobile-body); }
+.mobile-app .button { min-height: 44px; font-size: var(--mobile-body); padding: 10px 12px; }
+.mobile-app .text-button { font-size: var(--mobile-small); gap: 5px; }
+.mobile-app .detail-picture { height: 146px; }
+.mobile-app .equipment-card:hover { transform: none; }
+.mobile-app .small-icon { width: 32px; height: 32px; }
+.mobile-app .empty-icon { width: 44px; height: 44px; }
+.mobile-app .success-mark svg { width: 24px; height: 24px; }
+.mobile-app .rental-progress li svg { width: 14px; height: 14px; }
+.mobile-app .form-intro { gap: 8px; margin-bottom: 16px; }
+.mobile-app .form-intro > div, .mobile-app .detail-owner > div { min-width: 0; }
+.mobile-app .form-intro h3 { font-size: var(--mobile-title); }
+.mobile-app .form-intro p { font-size: var(--mobile-small); }
+.mobile-app .detail-owner { padding: 10px; gap: 8px; margin-bottom: 16px; }
+.mobile-app .estimate { margin: 16px 0 12px; padding: 12px; }
+.mobile-app .estimate h3 { font-size: var(--mobile-title); flex-wrap: wrap; margin-bottom: 12px; }
+.mobile-app .estimate h3 span { font: inherit; font-size: var(--mobile-caption); }
+.mobile-app .estimate > div { font-size: var(--mobile-body); gap: 8px; margin-bottom: 8px; }
+.mobile-app .estimate > div > span { min-width: 0; overflow-wrap: anywhere; }
+.mobile-app .estimate > div > strong { flex-shrink: 0; }
+.mobile-app .estimate-total strong { font-size: 20px; }
+.mobile-app .review-note { padding: 10px; margin: 12px 0; line-height: 1.5; }
+.mobile-app .booking-steps { padding: 8px; margin-bottom: 16px; font-size: var(--mobile-caption); }
+.mobile-app .booking-summary { padding: 12px; margin-bottom: 16px; }
+.mobile-app .booking-summary > div { margin-bottom: 12px; gap: 4px; }
+.mobile-app .booking-summary > div:last-child { margin-bottom: 0; }
+.mobile-app .duration-field, .mobile-app .pickup-field { margin: 12px 0; }
+.mobile-app .form-actions { gap: 8px; margin-top: 14px; }
+.mobile-app .availability-result, .mobile-app .reserved-dates, .mobile-app .form-error { font-size: var(--mobile-small); padding: 10px; }
+.mobile-app .status-badge { display: inline-block; max-width: 100%; white-space: normal; font-size: var(--mobile-caption); }
+.farmer-categories button { font-size: var(--mobile-caption); line-height: 1.35; }
+.farmer-header { padding-block: 4px; }
+.farmer-demo-strip { padding-block: 5px; }
+.farmer-notice p { min-width: 0; flex: 1; }
+.mobile-app .equipment-picture, .mobile-app .detail-picture { overflow: hidden; }
+.mobile-app .equipment-picture .availability, .mobile-app .detail-picture .availability { z-index: 2; }
+.farmer-rental-art { overflow: hidden; }
+.farmer-hero-photo { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center; }
+.farmer-hero::after { content: ''; position: absolute; inset: 0; background: linear-gradient(90deg, #123f31ed, #123f31b8 58%, #123f3150); }
+.farmer-hero > div { z-index: 2; }
+.mobile-app textarea { min-height: 80px; font-size: var(--mobile-body); }
+.farmer-profile-form { margin-top: 16px; display: flex; flex-direction: column; gap: 14px; }
+.farmer-profile-form h2 { font-size: var(--mobile-title); }
+.farmer-profile-form label, .delivery-fields label { display: flex; flex-direction: column; gap: 7px; }
+.farmer-profile-form input { width: 100%; }
+.rental-farmer-summary { padding: 14px; background: #f1f5e9; border: 1px solid #e1e8d5; border-radius: 10px; margin-bottom: 18px; }
+.rental-farmer-summary h3 { font-size: var(--mobile-title); margin-bottom: 7px; }
+.rental-farmer-summary p { font-size: var(--mobile-body); line-height: 1.7; overflow-wrap: anywhere; }
+.delivery-fields { border: 1px solid #e1e8d5; border-radius: 10px; padding: 14px; min-width: 0; margin: 16px 0; }
+.delivery-fields legend { font-size: var(--mobile-body); font-weight: 700; padding: 0 5px; }
+.delivery-fields label + label { margin-top: 14px; }
+.rental-contact-details dd, .farmer-profile-card h2 { overflow-wrap: anywhere; }
+@media(max-width: 350px) {
+ .mobile-app { --mobile-heading: 20px; --mobile-hero: 22px; }
+ .farmer-main { padding: 12px; }
+ .farmer-hero > div { padding: 14px; }
+}

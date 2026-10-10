@@ -1,0 +1,126 @@
+import type { Category, Equipment } from '../types'
+
+// Fictional owners, rates, and availability for the Nasugbu classroom demo.
+export const categories: Category[] = ['Land preparation', 'Crop care', 'Irrigation', 'Harvesting', 'Transport', 'Hand tools']
+
+export const equipment: Equipment[] = [
+  {
+    id: 'hand-tractor', name: 'Hand Tractor', category: 'Land preparation',
+    owner: 'Bayanihan Farmers Cooperative', location: 'Brgy. Wawa, Nasugbu',
+    rate: 1200, deliveryFee: 250, available: true, art: 'tractor',
+    description: 'Make land preparation easier with this two-wheel hand tractor. A practical option for preparing small plots before planting.',
+    specs: ['7 hp diesel engine', 'Two-wheel drive', 'Plow attachment included', 'Fuel and operator not included'],
+  },
+  {
+    id: 'power-tiller', name: 'Power Tiller', category: 'Land preparation',
+    owner: 'Mang Ramon Equipment Rental', location: 'Brgy. Lumbangan, Nasugbu',
+    rate: 950, deliveryFee: 250, available: true, art: 'tiller',
+    description: 'Break up compacted soil and prepare seedbeds with a compact rotary tiller. Best suited to smaller fields and manageable soil conditions.',
+    specs: ['6.5 hp gasoline engine', 'Rotary tine attachment', 'Adjustable tilling depth', 'Fuel and operator not included'],
+  },
+  {
+    id: 'motorized-sprayer', name: 'Motorized Sprayer', category: 'Crop care',
+    owner: 'Bukid Partners Cooperative', location: 'Brgy. Cogunan, Nasugbu',
+    rate: 350, deliveryFee: 150, available: true, art: 'sprayer',
+    description: 'A portable motorized backpack sprayer for crop maintenance. Ask the owner about operation and cleaning before pickup.',
+    specs: ['20-liter tank', 'Adjustable spray nozzle', 'Backpack straps included', 'Fuel and crop treatments not included'],
+  },
+  {
+    id: 'water-pump', name: 'Water Pump', category: 'Irrigation',
+    owner: 'Bayanihan Farmers Cooperative', location: 'Brgy. Wawa, Nasugbu',
+    rate: 500, deliveryFee: 200, available: true, art: 'pump',
+    description: 'Move water to your field with a portable irrigation pump. Confirm the water source and hose requirements with the owner.',
+    specs: ['2-inch inlet and outlet', 'Gasoline engine', 'Basic hose set included', 'Fuel and operator not included'],
+  },
+  {
+    id: 'farm-tractor', name: 'Four-wheel Farm Tractor', category: 'Land preparation',
+    owner: 'Bayanihan Farmers Cooperative', location: 'Brgy. Wawa, Nasugbu',
+    rate: 4500, deliveryFee: 600, available: true, art: 'farm-tractor',
+    description: 'A four-wheel tractor for larger land-preparation tasks. The owner arranges a trained operator for this listing.',
+    specs: ['Disc plow included', 'Trained operator included', 'Fuel excluded', 'Site access check required'],
+  },
+  {
+    id: 'grass-cutter', name: 'Grass Cutter', category: 'Crop care',
+    owner: 'Mang Ramon Equipment Rental', location: 'Brgy. Lumbangan, Nasugbu',
+    rate: 300, deliveryFee: 150, available: true, art: 'cutter',
+    description: 'A portable brush cutter for clearing grass along field edges and paths. Ask the owner for an operation briefing.',
+    specs: ['Shoulder harness included', 'Grass-cutting head included', 'Fuel excluded', 'Protective equipment not included'],
+  },
+  {
+    id: 'manual-sprayer', name: 'Manual Backpack Sprayer', category: 'Crop care',
+    owner: 'Bukid Partners Cooperative', location: 'Brgy. Cogunan, Nasugbu',
+    rate: 100, deliveryFee: 100, available: true, art: 'sprayer',
+    description: 'A hand-operated backpack sprayer for small plots and gardens. Return the tank clean according to the owner’s instructions.',
+    specs: ['16-liter tank', 'Hand-operated pump', 'Adjustable nozzle', 'Crop treatments excluded'],
+  },
+  {
+    id: 'rice-harvester', name: 'Rice Combine Harvester', category: 'Harvesting',
+    owner: 'Bukid Partners Cooperative', location: 'Brgy. Cogunan, Nasugbu',
+    rate: 8000, deliveryFee: 900, available: false, art: 'harvester',
+    description: 'Harvest, thresh, and collect rice with one machine. This fictional unit is currently undergoing maintenance and cannot be requested.',
+    specs: ['Tracked drive', 'Harvesting and threshing', 'Trained crew included', 'Maintenance · unavailable'],
+  },
+  {
+    id: 'rice-thresher', name: 'Rice Thresher', category: 'Harvesting',
+    owner: 'Bayanihan Farmers Cooperative', location: 'Brgy. Wawa, Nasugbu',
+    rate: 1800, deliveryFee: 400, available: true, art: 'thresher',
+    description: 'Separate rice grains from harvested stalks using this portable thresher. The owner provides a trained operator for the rental.',
+    specs: ['Portable frame', 'Trained operator included', 'Fuel excluded', 'Collection sacks excluded'],
+  },
+  {
+    id: 'corn-sheller', name: 'Corn Sheller', category: 'Harvesting',
+    owner: 'Mang Ramon Equipment Rental', location: 'Brgy. Lumbangan, Nasugbu',
+    rate: 850, deliveryFee: 250, available: true, art: 'thresher',
+    description: 'Separate kernels from dried corn cobs. Confirm the crop condition and operating procedure with the owner.',
+    specs: ['Motorized shelling unit', 'Portable support frame', 'Power or fuel excluded', 'Operator excluded'],
+  },
+  {
+    id: 'farm-trailer', name: 'Farm Trailer', category: 'Transport',
+    owner: 'Bayanihan Farmers Cooperative', location: 'Brgy. Wawa, Nasugbu',
+    rate: 700, deliveryFee: 250, available: true, art: 'trailer',
+    description: 'Move harvests and supplies within the farm. Check towing compatibility and the loading limit with the owner.',
+    specs: ['Open cargo bed', 'Tow hitch included', 'Tow vehicle excluded', 'Farm use only'],
+  },
+  {
+    id: 'wheelbarrow', name: 'Wheelbarrow', category: 'Transport',
+    owner: 'Mang Ramon Equipment Rental', location: 'Brgy. Lumbangan, Nasugbu',
+    rate: 100, deliveryFee: 100, available: true, art: 'wheelbarrow',
+    description: 'Carry soil, compost, and small loads around your plot with a sturdy single-wheel barrow.',
+    specs: ['Steel tray', 'Single rubber wheel', 'Two hand grips', 'Manual operation'],
+  },
+  {
+    id: 'hoe', name: 'Farm Hoe (Asarol)', category: 'Hand tools',
+    owner: 'Bukid Partners Cooperative', location: 'Brgy. Cogunan, Nasugbu',
+    rate: 50, deliveryFee: 80, available: true, art: 'hoe',
+    description: 'A basic tool for loosening soil, weeding, and shaping planting beds in small plots.',
+    specs: ['Steel hoe head', 'Long wooden handle', 'Manual operation', 'One tool per rental'],
+  },
+  {
+    id: 'rake', name: 'Garden Rake (Kalaykay)', category: 'Hand tools',
+    owner: 'Bukid Partners Cooperative', location: 'Brgy. Cogunan, Nasugbu',
+    rate: 40, deliveryFee: 80, available: true, art: 'rake',
+    description: 'Level loose soil and gather light debris while preparing a garden bed or small planting area.',
+    specs: ['Steel tine head', 'Long wooden handle', 'Manual operation', 'One tool per rental'],
+  },
+  {
+    id: 'shovel', name: 'Shovel (Pala)', category: 'Hand tools',
+    owner: 'Mang Ramon Equipment Rental', location: 'Brgy. Lumbangan, Nasugbu',
+    rate: 50, deliveryFee: 80, available: true, art: 'shovel',
+    description: 'Dig and move loose soil, compost, or sand during everyday farm maintenance.',
+    specs: ['Steel digging blade', 'Long handle', 'Manual operation', 'One tool per rental'],
+  },
+  {
+    id: 'bolo', name: 'Farm Bolo (Itak)', category: 'Hand tools',
+    owner: 'Bukid Partners Cooperative', location: 'Brgy. Cogunan, Nasugbu',
+    rate: 60, deliveryFee: 80, available: true, art: 'bolo',
+    description: 'A traditional hand tool for controlled brush clearing and farm maintenance. Handle and transport with care.',
+    specs: ['Steel blade', 'Wooden grip', 'Sheath included', 'One tool per rental'],
+  },
+  {
+    id: 'sickle', name: 'Harvest Sickle (Karit)', category: 'Hand tools',
+    owner: 'Bukid Partners Cooperative', location: 'Brgy. Cogunan, Nasugbu',
+    rate: 40, deliveryFee: 80, available: true, art: 'sickle',
+    description: 'A curved hand tool for small-scale cutting of grass or crop stalks.',
+    specs: ['Curved steel blade', 'Wooden grip', 'Manual operation', 'One tool per rental'],
+  },
+]

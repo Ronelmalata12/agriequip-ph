@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap');
+
+:root {
+  font-family: 'DM Sans', 'Segoe UI', sans-serif;
+  color: #26392f;
+  background: #f7f8f3;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color-scheme: light;
+  --green: #214f3b;
+  --green-deep: #193f30;
+  --muted: #68756c;
+  --border: #e2e7dd;
+}
+* { box-sizing: border-box; }
+body { margin: 0; min-width: 320px; }
+button, input, select, textarea { font: inherit; }
+button { cursor: pointer; }
+button:disabled { cursor: not-allowed; opacity: .55; }
+button, a, input, select, textarea { -webkit-tap-highlight-color: transparent; }
+button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible { outline: 3px solid #bc9432; outline-offset: 4px; }
+h1, h2, h3, h4, p { margin: 0; }
+h1, h2, h3, h4 { font-family: 'Manrope', 'Segoe UI', sans-serif; }
+button svg, .location svg, .topbar svg { flex-shrink: 0; }
+button { border: 0; }
+a { color: inherit; }
+input, select, textarea { color: #26392f; background: white; border: 1px solid #cdd6ca; border-radius: 9px; min-height: 46px; padding: 10px 12px; min-width: 0; }
+textarea { width: 100%; resize: vertical; line-height: 1.6; }
+input::placeholder { color: #788479; }
+input[type='date'] { width: 100%; }
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; } }
